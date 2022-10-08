@@ -1,8 +1,6 @@
-<h1> :computer: APS - Processamento de Imagem e Visão Computacional - 6º sem</h1>
-<br>
+<h1> :computer: APS - Processamento de Imagem e Visão Computacional</h1>
 
 <h3>Reconhecimento Facial com Python</h3>
-
 
 Primeiro clone o repositorio:
 
