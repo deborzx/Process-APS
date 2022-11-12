@@ -12,23 +12,25 @@ img06 = fr.load_image_file('./img-faces/pic6.jpg')
 img07 = fr.load_image_file('./img-faces/pic7.jpg')
 img08 = fr.load_image_file('./img-faces/pic8.jpg')
 
+varGlobal1 = img01
+varGlobal2 = img04
 
 #para colocar a imagem com a cor padrão
-img05 = cv2.cvtColor(img05, cv2.COLOR_BGR2RGB)
-img06 = cv2.cvtColor(img06, cv2.COLOR_BGR2RGB)
+varGlobal1 = cv2.cvtColor(varGlobal1, cv2.COLOR_BGR2RGB)
+varGlobal2 = cv2.cvtColor(varGlobal2, cv2.COLOR_BGR2RGB)
 
 
 #printando as coordenadas da imagem
-LocalizationFace = fr.face_locations(img05)[0]
+LocalizationFace = fr.face_locations(varGlobal1)[0]
 
 
 #calculando area retangular da imagem
-cv2.rectangle(img05, (LocalizationFace[3], LocalizationFace[0]), (LocalizationFace[1], LocalizationFace[2]), (0,255,0),2)
+cv2.rectangle(varGlobal1, (LocalizationFace[3], LocalizationFace[0]), (LocalizationFace[1], LocalizationFace[2]), (0,255,0),2)
 
 
 #para retornar as medidas do rosto da pessoa no terminal
-medidasPic = fr.face_encodings(img05)[0]
-medidasPicTest = fr.face_encodings(img06)[0]
+medidasPic = fr.face_encodings(varGlobal1)[0]
+medidasPicTest = fr.face_encodings(varGlobal2)[0]
 
 #comparando medidas
 TestComparation = fr.compare_faces([medidasPic], medidasPicTest)
@@ -43,8 +45,8 @@ else:
 
 
 #mostra a imagem
-cv2.imshow('Imagem Original', img05)
-cv2.imshow('Imagem de Teste', img06)
+cv2.imshow('Imagem Original', varGlobal1)
+cv2.imshow('Imagem de Teste', varGlobal2)
 cv2.waitKey(0)
 
 

@@ -2,7 +2,7 @@
 #media pipe faz o reconhecimento
 import cv2
 import mediapipe as mp
-
+import face_recognition as fr
 
 #conectando na web cam
 WebCam = cv2.VideoCapture(0)
@@ -32,13 +32,12 @@ while True:
         for rosto in lista_rostos.detections:
             #desenha rosto na imagem
             contorno.draw_detection(frame, rosto)
-    cv2.imshow("LULA O LUCAS TE AMA", frame)
+    cv2.imshow("TESTE", frame)
 
 
     # quando apertar ESC ele para o loop // waitKey - milisegundos
     if cv2.waitKey(10) == 27:
         break
-
 
 
 
