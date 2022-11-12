@@ -11,9 +11,21 @@ img05 = fr.load_image_file('./img-faces/pic5.jpg')
 img06 = fr.load_image_file('./img-faces/pic6.jpg')
 img07 = fr.load_image_file('./img-faces/pic7.jpg')
 img08 = fr.load_image_file('./img-faces/pic8.jpg')
+img09 = fr.load_image_file('./img-faces/pic9.jpeg')
+img10 = fr.load_image_file('./img-faces/pic10.jpg')
+img11 = fr.load_image_file('./img-faces/pic11.jpg')
+img12 = fr.load_image_file('./img-faces/pic12.jpg')
+img13 = fr.load_image_file('./img-faces/pic13.jpg')
+img14 = fr.load_image_file('./img-faces/pic14.jpg')
+img15 = fr.load_image_file('./img-faces/pic15.jpg')
+img16 = fr.load_image_file('./img-faces/pic16.png')
+img17 = fr.load_image_file('./img-faces/pic17.jpg')
+img18 = fr.load_image_file('./img-faces/pic18.jpg')
+img19 = fr.load_image_file('./img-faces/pic19.jpg')
+img20 = fr.load_image_file('./img-faces/pic20.png')
 
-varGlobal1 = img01
-varGlobal2 = img04
+varGlobal1 = img16
+varGlobal2 = img20
 
 #para colocar a imagem com a cor padrão
 varGlobal1 = cv2.cvtColor(varGlobal1, cv2.COLOR_BGR2RGB)
