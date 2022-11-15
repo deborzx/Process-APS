@@ -24,7 +24,7 @@ img18 = fr.load_image_file('./img-faces/pic18.jpg')
 img19 = fr.load_image_file('./img-faces/pic19.jpg')
 img20 = fr.load_image_file('./img-faces/pic20.png')
 
-varGlobal = img19 
+varGlobal = img13
 
 #para colocar a imagem com a cor padrão
 varGlobal = cv2.cvtColor(varGlobal, cv2.COLOR_BGR2RGB)

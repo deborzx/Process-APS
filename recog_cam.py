@@ -2,7 +2,6 @@
 #media pipe faz o reconhecimento
 import cv2
 import mediapipe as mp
-import face_recognition as fr
 
 #conectando na web cam
 WebCam = cv2.VideoCapture(0)
@@ -13,7 +12,6 @@ solution_recog_face = mp.solutions.face_detection
 recog_faces = solution_recog_face.FaceDetection()
 #cria o desenho pelo rosto
 contorno = mp.solutions.drawing_utils
-
 
 
 #frame: videos sao varias fotos que a cada segundo passam pela nossa vista, entao para nao ficar congelado
